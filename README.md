@@ -126,7 +126,9 @@ The OWASP Top 10 is a standard awareness document for developers, web applicatio
 
 ## Credits & References
 
-- [The Official OWASP Top 10 Website](https://owasp.org/www-project-top-ten/)
+All credit to the **O**pen **W**orldwide **A**pplication **S**ecurity **P**roject
+
+- [OWASP Top 10 for Web Apps](https://owasp.org/www-project-top-ten/)
 - [OWASP API Security Top 10](https://owasp.org/API-Security/editions/2023/en/0x00-header/)
 - [The OWASP Top Ten Supplemental Site](https://www.owasptopten.org)
 - [PortSwigger Web Academy Labs](https://portswigger.net/web-security)
