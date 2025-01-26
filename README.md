@@ -32,11 +32,15 @@ The OWASP Top 10 is a standard awareness document for developers, web applicatio
 
 ---
 
+[Training Resources](#training-resources)
+
 [Credits and References](#credits--references)
 
 ---
 
 ## OWASP Top 10 for Web Applications (2021)
+
+The OWASP Top 10 for Web Applications is released every 4 years. The next iteration will be released in 2025.
 
 ### 1. Broken Access Control
 
@@ -82,55 +86,129 @@ The OWASP Top 10 is a standard awareness document for developers, web applicatio
 
 ## OWASP Top 10 for API Security (2023)
 
+The API Security Top 10 is released every 4 years. The next iteration will be released in 2027.
+
 ### 1. Broken Object Level Authorization
 
 - [API1:2023 - Broken Object Level Authorization](https://owasp.org/API-Security/editions/2023/en/0xa1-broken-object-level-authorization/) APIs tend to expose endpoints that handle object identifiers, creating a wide attack surface of Object Level Access Control issues. Object level authorization checks should be considered in every function that accesses a data source using an ID from the user.
+
+- Training: 
+
+    - [PortSwigger - Access control vulnerabilities and privilege escalation](https://portswigger.net/web-security/access-control)
 
 ### 2. Broken Authentication
 
 - [API2:2023 - Broken Authentication](https://owasp.org/API-Security/editions/2023/en/0xa2-broken-authentication/) Authentication mechanisms are often implemented incorrectly, allowing attackers to compromise authentication tokens or to exploit implementation flaws to assume other user's identities temporarily or permanently. Compromising a system's ability to identify the client/user, compromises API security overall.
 
+- Training:
+
+    - [PortSwigger: Authentication vulnerabilities](https://portswigger.net/web-security/authentication)
+
+    - [PortSwigger: OAuth 2.0 authentication vulnerabilities](https://portswigger.net/web-security/oauth)
+
+    - [PortSwigger: JWT attacks](https://portswigger.net/web-security/jwt)
+
 ### 3. Broken Object Property Level Authorization
 
 - [API3:2023 - Broken Object Property Level Authorization](https://owasp.org/API-Security/editions/2023/en/0xa3-broken-object-property-level-authorization/) This category combines API3:2019 Excessive Data Exposure and API6:2019 - Mass Assignment, focusing on the root cause: the lack of or improper authorization validation at the object property level. This leads to information exposure or manipulation by unauthorized parties.
+
+- Training:
+
+    - [PortSwigger: Mass assignment vulnerabilities](https://portswigger.net/web-security/api-testing#mass-assignment-vulnerabilities)
 
 ### 4. Unrestricted Resource Consumption
 
 - [API4:2023 - Unrestricted Resource Consumption](https://owasp.org/API-Security/editions/2023/en/0xa4-unrestricted-resource-consumption/) Satisfying API requests requires resources such as network bandwidth, CPU, memory, and storage. Other resources such as emails/SMS/phone calls or biometrics validation are made available by service providers via API integrations, and paid for per request. Successful attacks can lead to Denial of Service or an increase of operational costs.
 
+- Training:
+
+    - [PortSwigger: Race conditions](https://portswigger.net/web-security/race-conditions)
+
+    - [PortSwigger: File upload vulnerabilities](https://portswigger.net/web-security/file-upload)
+    
 ### 5. Broken Function Level Authorization
 
 - [API5:2023 - Broken Function Level Authorization](https://owasp.org/API-Security/editions/2023/en/0xa5-broken-function-level-authorization/) Complex access control policies with different hierarchies, groups, and roles, and an unclear separation between administrative and regular functions, tend to lead to authorization flaws. By exploiting these issues, attackers can gain access to other users’ resources and/or administrative functions.
 
+- Training:
+
+    - [PortSwigger: Access control vulnerabilities and privilege escalation](https://portswigger.net/web-security/access-control)
+    
 ### 6. Unrestricted Access to Sensitive Business Flows
 
 - [API6:2023 - Unrestricted Access to Sensitive Business Flows](https://owasp.org/API-Security/editions/2023/en/0xa6-unrestricted-access-to-sensitive-business-flows/) APIs vulnerable to this risk expose a business flow - such as buying a ticket, or posting a comment - without compensating for how the functionality could harm the business if used excessively in an automated manner. This doesn't necessarily come from implementation bugs.
 
+- Training:
+
+    - [PortSwigger: Business logic vulnerabilities](https://portswigger.net/web-security/logic-flaws)
+    
 ### 7. Server Side Request Forgery
 
 - [API7:2023 - Server Side Request Forgery](https://owasp.org/API-Security/editions/2023/en/0xa7-server-side-request-forgery/) Server-Side Request Forgery (SSRF) flaws can occur when an API is fetching a remote resource without validating the user-supplied URI. This enables an attacker to coerce the application to send a crafted request to an unexpected destination, even when protected by a firewall or a VPN.
 
+- Training:
+
+    - [PortSwigger: Server-side request forgery (SSRF)](https://portswigger.net/web-security/ssrf)
+    
 ### 8. Security Misconfiguration
 
 - [API8:2023 - Security Misconfiguration](https://owasp.org/API-Security/editions/2023/en/0xa8-security-misconfiguration/) APIs and the systems supporting them typically contain complex configurations, meant to make the APIs more customizable. Software and DevOps engineers can miss these configurations, or don't follow security best practices when it comes to configuration, opening the door for different types of attacks.
 
+- Training:
+
+    - [PortSwigger: Cross-origin resource sharing (CORS)](https://portswigger.net/web-security/cors)
+
+    - [PortSwigger: Information disclosure vulnerabilities](https://portswigger.net/web-security/information-disclosure)
+
+    - [PortSwigger: HTTP Host header attacks](https://portswigger.net/web-security/host-header)
+
+    - [PortSwigger: HTTP request smuggling](https://portswigger.net/web-security/request-smuggling)
+    
 ### 9. Improper Inventory Management
 
 - [API9:2023 - Improper Inventory Management](https://owasp.org/API-Security/editions/2023/en/0xa9-improper-inventory-management/) APIs tend to expose more endpoints than traditional web applications, making proper and updated documentation highly important. A proper inventory of hosts and deployed API versions also are important to mitigate issues such as deprecated API versions and exposed debug endpoints.
 
+- Training:
+
+    - [PortSwigger: API Testing](https://portswigger.net/web-security/api-testing)
+    
 ### 10. Unsafe Consumption of APIs
 
 - [API10:2023 - Unsafe Consumption of APIs](https://owasp.org/API-Security/editions/2023/en/0xaa-unsafe-consumption-of-apis/) Developers tend to trust data received from third-party APIs more than user input, and so tend to adopt weaker security standards. In order to compromise APIs, attackers go after integrated third-party services instead of trying to compromise the target API directly.
 
+- Training:
+
+    - [PortSwigger: API Testing](https://portswigger.net/web-security/api-testing)
+    
+## Training Resources
+
+- [PortSwigger Web Academy Labs](https://portswigger.net/web-security)
+
+- [TryHackMe OWASP Top 10](https://tryhackme.com/r/room/owasptop10)
+
+- [HackTheBox API Attacks Module (OWASP API Security Top 10)](https://academy.hackthebox.com/module/details/268)
 ---
 
 ## Credits & References
 
-All credit to the **O**pen **W**orldwide **A**pplication **S**ecurity **P**roject
+Special thanks and credit to the **O**pen **W**orldwide **A**pplication **S**ecurity **P**roject for everything they do for the community.
+
+![OWASP](static/owasp.png)
 
 - [OWASP Top 10 for Web Apps](https://owasp.org/www-project-top-ten/)
+
 - [OWASP API Security Top 10](https://owasp.org/API-Security/editions/2023/en/0x00-header/)
+
 - [The OWASP Top Ten Supplemental Site](https://www.owasptopten.org)
-- [PortSwigger Web Academy Labs](https://portswigger.net/web-security)
+
 
 ![OWASP Top 10 Logo](static/top10.png)
+
+---
+
+Special thanks to PortSwigger's amazing products and content
+
+![PortSwigger](static/portswigger.png)
+
+- [PortSwigger API Security](https://portswigger.net/web-security/api-testing/top-10-api-vulnerabilities)
+
